@@ -16,7 +16,7 @@ import java.util.Scanner;
         // Method to view all tasks
         public static void viewTasks() {
             if (tasks.isEmpty()) {
-                System.out.println("No tasks available.");
+                System.out.println("No tasks available here.");
             } else {
                 System.out.println("Your tasks:");
                 for (int i = 0; i < tasks.size(); i++) {
@@ -31,7 +31,7 @@ import java.util.Scanner;
                 String removedTask = tasks.remove(taskNumber - 1);
                 System.out.println("Task '" + removedTask + "' deleted successfully!");
             } else {
-                System.out.println("Invalid task number.");
+                System.out.println(" Please Invalid task number.");
             }
         }
 

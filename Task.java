@@ -16,7 +16,7 @@ import java.util.Scanner;
         // Method to view all tasks
         public static void viewTasks() {
             if (tasks.isEmpty()) {
-                System.out.println("No tasks available here.");
+                System.out.println("Pls No tasks available here.");
             } else {
                 System.out.println("Your tasks:");
                 for (int i = 0; i < tasks.size(); i++) {
@@ -49,7 +49,7 @@ import java.util.Scanner;
 
                 switch (choice) {
                     case "1":
-                        System.out.print("Enter task: ");
+                        System.out.print("Enter your task: ");
                         String task = scanner.nextLine();
                         addTask(task);
                         break;
@@ -60,7 +60,7 @@ import java.util.Scanner;
                         viewTasks();
                         if (tasks.isEmpty()) break; // Skip deletion if no tasks
                         try {
-                            System.out.print("Enter task number to delete: ");
+                            System.out.print("Enter the task number to delete: ");
                             int taskNum = Integer.parseInt(scanner.nextLine());
                             deleteTask(taskNum);
                         } catch (NumberFormatException e) {
